@@ -1,0 +1,24 @@
+.sideNav {
+  width: 356px;
+  background-color: rgba(255, 255 , 255, 0.64);
+  height: 100%;
+  min-height: 100vh;
+  box-shadow: 2px 2px 8px rgba(0, 0 , 0, 0.64);
+  padding: 32px 24px
+}
+ul {
+  list-style: none;
+  padding: 0
+}
+.navItem {
+  padding: 8px ;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.16);
+  }
+
+  &:active {
+    background: rgba(203, 205, 255, 0.64);
+  }
+}

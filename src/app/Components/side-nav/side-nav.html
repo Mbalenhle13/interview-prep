@@ -1,0 +1,7 @@
+<div class="sideNav">
+  @for (item of navItems; track $index) {<ul>
+    <li class="navItem" [routerLink]="item.route">
+      {{item.name}}
+    </li>
+  </ul>}
+</div>

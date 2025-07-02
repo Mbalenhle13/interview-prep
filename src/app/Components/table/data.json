@@ -1,0 +1,28 @@
+{
+  "people": [
+    {
+      "id": "1",
+      "name": "Khanyi",
+      "surname": "Khokhoba",
+      "age": 25,
+      "gender": "female",
+      "salary": 20000
+    },
+    {
+      "id": "2",
+      "name": "Thuso",
+      "surname": "Studio",
+      "age": 31,
+      "gender": "male",
+      "salary": 10000
+    },
+    {
+      "id": "3",
+      "name": "Mbali",
+      "surname": "Mbau",
+      "age": 45,
+      "gender": "female",
+      "salary": 50000
+    }
+  ]
+}
