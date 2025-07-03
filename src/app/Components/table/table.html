@@ -1,11 +1,3 @@
-<input id="search" name="search" type="text" placeholder="name" [(ngModel)]="searchText" />
-<label for="search" (click)="search(searchText)">Search</label>
-<div class="cta">
-  <button type="button" (click)="sortBySalary()">Sort By Salary</button>
-  <button type="button" (click)="sortByName()">Sort By Name</button>
-  <button type="button" (click)="delete(person)">Delete</button>
-</div>
-
 <table>
   <thead>
   <tr>
@@ -13,13 +5,7 @@
       Name
     </th>
     <th>
-      Surname
-    </th>
-    <th>
       Age
-    </th>
-    <th>
-      Gender
     </th>
     <th>
       Salary
@@ -28,16 +14,12 @@
   </thead>
 
   <tbody>
-  @for (person of people; track $index) {
-  <tr (click)="getPerson(person)">
-    <td>{{person.name}}</td>
-    <td>{{person.surname}}</td>
-    <td>{{person.age}}</td>
-    <td>{{person.gender}}</td>
-    <td>{{person.salary}}</td>
+  @for (person of data; track $index) {
+  <tr (click)="getSelected($event)">
+    <td>{{person.employee_name}}</td>
+    <td>{{person.employee_age}}</td>
+    <td>{{person.employee_salary}}</td>
   </tr>
   }
   </tbody>
 </table>
-<br>
-<div>Person: {{person | json}}</div>

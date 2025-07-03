@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {SideNav} from '../Components/side-nav/side-nav';
+import {SideNav} from '../../Components/side-nav/side-nav';
 
 @Component({
   standalone: true,
@@ -9,5 +9,5 @@ import {SideNav} from '../Components/side-nav/side-nav';
   styleUrl: './homepage.css'
 })
 export class Homepage {
-
+  navItems = [{name: 'Employees', route: 'employees'}, {name: 'Editor', route: 'editor'}];
 }

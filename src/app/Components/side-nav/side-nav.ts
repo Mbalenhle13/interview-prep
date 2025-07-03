@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {RouterLink} from '@angular/router';
 
 @Component({
@@ -11,5 +11,5 @@ import {RouterLink} from '@angular/router';
   styleUrl: './side-nav.css'
 })
 export class SideNav {
- navItems = [{name: 'Table', route: 'table'}, {name: 'Editor', route: 'editor'}];
+  @Input() navRoutes?: {name: string, route: string}[];
 }
